@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wonderu</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <a href="#" class="nav-item" onclick="showSection('home-section')">Home</a> 
+    <a href="#" class="nav-item" onclick="showSection('marvel-section')">Marvel</a>
+    <a href="#" class="nav-item" onclick="showSection('pokemon-section')">Pokemon</a>
+  </div>
+  <div class="container">
+    
+    <div id="home-section" class="section">
+      <div class="home-content">
+        <h2>Welcome to Wonderu</h2>
+        <p>At HeroDex, we bring the worlds of Marvel and Pokémon to your fingertips. Whether you're a die-hard comic book fan, an avid Pokémon trainer, or simply someone who loves discovering new characters, our comprehensive database is designed to make your search as seamless and enjoyable as possible.</p>
+        <br>
+        <h3>Our Mission</h3>
+        <p>Our mission is to create a one-stop destination for fans and enthusiasts of Marvel and Pokémon. We aim to provide detailed, accurate, and up-to-date information on every character from these beloved universes, making it easier for you to find, learn about, and share your favorite heroes, villains, and creatures.</p>
+      </div>
+    </div>
+   
+    <div id="marvel-section" class="section" style="display: none;">
+      <div class="marvel-search-container">
+        <input type="text" id="marvel-input" class="input-box"  placeholder="Search Marvel Character">
+        <button id="marvel-button" class="submit-button">Search</button>
+      </div>
+      <div id="show-container" class="show-container"></div>
+    </div>
+    
+    <div id="pokemon-section" class="section" style="display: none;">
+      <div class="pokemon-search-container">
+        <input type="text" id="pokemon-input" class="input-box" placeholder="Enter Pokémon Name">
+        <button onclick="fetchPokemonData()" class="submit-button">Search</button>
+      </div>
+      <div id="search-card" class="card" style="display: none;">
+        <div class="card-image">
+          <img id="pokemonSprite" src="" alt="Pokemon Sprite">
+        </div>
+        <div class="card-details">
+          <h3 id="pokemonNameDetail" class="poke-name"></h3>
+          <div id="abilitiesList" class="abilities"></div>
+          <div id="statsList" class="stats"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="social-media">
+      <a href="https://www.facebook.com/ja.reyes.965/" target="_blank" class="social-link">Facebook</a>
+      <a href="https://www.instagram.com/junny_lababo/" target="_blank" class="social-link">Instagram</a>
+      <a href="mailto:andrei0463iz@gmail.com" class="social-link">Gmail</a>
+    </div>
+    <div class="address">
+      <p>San Vicente, Santa Rita, Pampanga</p>
+    </div>
+  </div>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
